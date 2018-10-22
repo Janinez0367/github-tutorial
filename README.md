@@ -67,8 +67,54 @@ How to add & commit for the first time using the ssh key
 
 ---
 ## Workflow & Commands
+Checking the your status on where your at ,add ,commit and push is a way to have a duplicate of your file 
 
+ Checking Status
+ * type ```git status```
+   * This will tell you if everything has already been move to github or not 
+    * It will show you RED if it hasn't been Push to github 
+   * It will be Green if you push the file BEFORE but later on made some changes but didn't push again
+ 
+Adding your file 
+* type ```git add .```
+  * This will add your current/entire directory to the stage
+* ```git add <FILENAME>```
+  * This will add the file to the stage for it to be commited
 
+Commiting a file
+* Type ```git commit -m "message"```
+  * This take a 'snapshot' of the files on the stage 
+  * The message should be presnt-tense and describe what was modified in the snapshot
+
+Pushing the File
+* Type ``` git push```
+  * Thsi will push the files to Github 
+  * Only if the file was commited
 
 ---
 ## Rolling Back Changes
+
+##### _**Undoing edits/add/commit/push**_
+
+After you push your file to github it is possible to do the opposite and also what you did before you push anything can be changed too.
+
+Undo edits 
+* Type ```git checkout --<filename>```
+  * This will undo your edits only when you added them to the stage
+ 
+Undo add
+* Type ```git reset HEAD <FILENAME>```
+  * This will undo what you added to the stage AFTER you commited the file 
+  * This will **NOT** undo any edits that were made
+
+Undo commits
+* Type ```git reset --soft HEAD~1```
+    * This will undo your commit when you have already pushed it to github
+
+Undoing add from push 
+* Type ```git reset HEAD~1```
+  * This will undo commit and add all at once 
+
+Undoing edits from push 
+* Type ```git reset --hard HEAD~1```
+  * This will UNDO commit ,add , and edit all at once
