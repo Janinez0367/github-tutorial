@@ -54,7 +54,7 @@ How to make your remote repo on Github
 3. Select New repository 
       * Repository name: ```<Folder Name>```  
       **MUST BE THE SAME NAME AS THE FOLDER FROM CLOUD9**
-4. CLick Create repository  
+4. Click Create repository  
 
 How to add & commit for the first time using the ssh key 
 1. Now make a file in your folder (MAKE SURE YOU ARE IN THE CORRECT FOLDER)  type ```touch <file>``` if your using Cloud9
@@ -88,7 +88,7 @@ Commiting a file
 
 Pushing the File
 * Type ``` git push```
-  * Thsi will push the files to Github 
+  * This will push the files to Github 
   * Only if the file was commited
 
 ---
