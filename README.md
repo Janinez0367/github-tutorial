@@ -22,7 +22,7 @@ _By Janine Zhang_
 
 Setting up a _**GitHub**_ account :
 1. Go to [github.com](Github.com)
-2. On the top right corner click sign in or sign up(insert picture)
+2. On the top right corner click sign in or sign up
 
 Creating a SSH Key: (To connect to your remote)
 1. Login into your [Github](github.com) account that you have or just created.
